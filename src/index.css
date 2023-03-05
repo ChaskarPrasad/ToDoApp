@@ -1,13 +1,81 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message {
+  padding-top: 10px;
+  text-align: center;
+  color: rebeccapurple;
+}
+.container {
+  /* background-color: salmon; */
+  margin: 100px 0;
+  padding: 2rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container div {
+  background-color: #eee;
+  padding: 2rem;
+  /* margin-bottom: 2rem; */
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  border: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  flex-basis: 70%;
+  outline: none;
+}
+
+.form .add,
+.delete {
+  border: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+ul .item {
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  border-radius: 5px;
+}
+.delete {
+  float: right;
 }
